@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zona Rural - Página Inicial</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous" />
+    <link rel="stylesheet" href="estilos.css" />
+    <style>
+        /* Mantive seus estilos originais */
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+        }
+
+        main {
+            flex: 1 0 auto;
+        }
+
+        footer {
+            background-color: #001f3f;
+            flex-shrink: 0;
+        }
+
+        .navbar,
+        footer {
+            background-color: #001f3f; /* Azul Marinho */
+        }
+
+        .navbar-brand {
+            margin-left: auto;
+            font-size: 1.5rem; /* Tamanho do texto do símbolo */
+        }
+
+        .cabecalho {
+            background-color: #333333; /* Cinza Escuro */
+        }
+
+        .cabecalho h1 {
+            color: white; /* Cor do texto do cabeçalho */
+        }
+
+        .cabecalho h3 {
+            color: yellow; /* Cor Amarela para o subtítulo */
+        }
+
+        /* Para o container principal (main) */
+main.container {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Garantir que imagens não extrapolem a largura */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Evitar overflow horizontal */
+body {
+  overflow-x: hidden;
+}
+
+.row.mb-4 {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+.row.mb-4 > [class*='col-'] {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.col-md-4 img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+    </style>
+</head>
+
+<body>
+    <section class="cabecalho text-center" style="padding: 20px 0;">
+        <h1>AGRINHO 2025</h1>
+        <h3>Festejando Conexão Campo Cidade</h3>
+    </section>
+
+    <nav class="navbar navbar-expand-lg navbar-dark shadow">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav me-auto">
+                    <a class="nav-link" href="index.html">Página Inicial</a>
+                    <a class="nav-link" href="energia.html">Energia Rural</a>
+                    <a class="nav-link" href="agua.html">Água</a>
+                    <a class="nav-link" href="producao.html">Produção</a>
+                </div>
+                <a class="navbar-brand" href="#" title="Símbolo do Site">🌽</a>
+            </div>
+        </div>
+    </nav>
+
+    <audio id="somClick" src="jao (online-audio-converter.com).mp3" preload="auto"></audio>
+
+  <script>
+    const som = document.getElementById("somClick");
+
+    document.addEventListener("click", () => {
+      som.pause();
+      som.currentTime = 0;
+      som.playbackRate = 2; // <-- aqui aumenta a velocidade
+      som.play().catch((e) => {
+        console.log("Erro ao tocar o som:", e);
+      });
+    });
+  </script>
+
+    <main class="container mt-5">
+        <!-- Seu conteúdo principal (seu código dentro do main permanece igual) -->
+
+        <style>
+            .energia-container {
+                display: flex;
+                gap: 20px;
+                align-items: flex-start;
+                max-width: 900px;
+                margin: 40px auto;
+                padding: 0 20px;
+            }
+
+            .energia-container img {
+                width: 300px;
+                height: auto;
+                border-radius: 12px;
+                object-fit: cover;
+                flex-shrink: 0;
+            }
+
+            .energia-text {
+                flex: 1;
+                font-family: Arial, sans-serif;
+                color: #333;
+            }
+
+            .energia-text h1 {
+                color: #001f3f;
+                margin-bottom: 16px;
+            }
+
+            .energia-text p {
+                margin-bottom: 16px;
+                line-height: 1.6;
+            }
+
+            @media (max-width: 768px) {
+                .energia-container {
+                    flex-direction: column;
+                    align-items: center;
+                }
+
+                .energia-container img {
+                    width: 100%;
+                    max-width: 400px;
+                    margin-bottom: 20px;
+                }
+            }
+        </style>
+
+        <div class="row mb-4">
+            <div class="col-md-8">
+                <h2>Energia Rural</h2>
+                <p>A energia desempenha um papel essencial no desenvolvimento sustentável das comunidades rurais, sendo um
+                    dos pilares que sustentam o progresso econômico, social e ambiental dessas regiões. Mais do que
+                    apenas eletricidade para iluminação doméstica, ela é a base para uma agricultura eficiente, segura e
+                    tecnicamente avançada.</p>
+
+                <p>Nas zonas rurais, a energia é utilizada em diversas etapas da cadeia produtiva: no bombeamento de água
+                    para irrigação, no funcionamento de estufas e sistemas de cultivo protegido, na colheita
+                    mecanizada, na refrigeração de alimentos perecíveis e no processamento de produtos agrícolas. Com
+                    ela, o campo se torna mais produtivo, competitivo e menos dependente de condições climáticas
+                    adversas.</p>
+
+                <p>Além disso, o acesso à energia permite melhorias na infraestrutura social da comunidade. Escolas podem
+                    funcionar em dois turnos com iluminação adequada, centros de saúde podem manter vacinas refrigeradas
+                    e realizar atendimentos noturnos, e famílias têm acesso a meios de comunicação, lazer e aprendizado,
+                    o que contribui diretamente para a permanência das pessoas no campo, reduzindo o êxodo rural.</p>
+
+                <p>Além disso, o acesso à energia permite melhorias na infraestrutura social da comunidade. Escolas podem
+                    funcionar em dois turnos com iluminação adequada, centros de saúde podem manter vacinas refrigeradas
+                    e realizar atendimentos noturnos, e famílias têm acesso a meios de comunicação, lazer e aprendizado,
+                    o que contribui diretamente para a permanência das pessoas no campo, reduzindo o êxodo rural.</p>
+            </div>
+            <div class="col-md-4">
+                <img src="./assets/image/zona.rural.png.jpeg" class="img-fluid rounded" alt="Produção Rural" />
+            </div>
+        </div>
+
+        <h3>Importância da Energia Rural</h3>
+        <p>O acesso à energia adequada permite que as comunidades rurais:</p>
+        <ol>
+            <li>Melhorem a produtividade agrícola.</li>
+            <li>Possam utilizar tecnologias modernas.</li>
+            <li>Tenham acesso a serviços essenciais, como saúde e educação.</li>
+            <li>Contribuam para a sustentabilidade ambiental.</li>
+        </ol>
+
+        <div class="row mt-4">
+            <div class="col-md-6">
+                <img src="./assets/image/energia_solar.jpg" class="img-fluid rounded" alt="Energia Solar" />
+            </div>
+            <div class="col-md-6">
+                <img src="./assets/image/energia_eolica.jpg" class="img-fluid rounded" alt="Energia Eólica" />
+            </div>
+        </div>
+
+        <h1>Fontes de Energia</h1>
+
+        <p>A diversidade de fontes de energia é fundamental para garantir a segurança energética e a sustentabilidade
+            ambiental, especialmente no meio rural, onde o acesso pode ser limitado. A adoção de fontes renováveis
+            contribui para a autonomia das comunidades, reduz os impactos ambientais e estimula práticas agrícolas
+            mais sustentáveis. A seguir, conheça as principais fontes de energia utilizadas nessas regiões:</p>
+
+        <p><strong>Energia Solar:</strong> Utiliza a luz do sol como fonte para geração de eletricidade por meio de
+            painéis fotovoltaicos. É uma das opções mais limpas e sustentáveis disponíveis, com ampla aplicação em
+            propriedades rurais para bombear água, alimentar cercas elétricas, armazenar energia em baterias e fornecer
+            eletricidade para residências e instalações agrícolas. Seu uso tem crescido significativamente devido à
+            redução de custos e facilidade de instalação.</p>
+
+        <p><strong>Energia Eólica:</strong> Aproveita a força dos ventos para movimentar turbinas geradoras de
+            eletricidade. Embora dependa da intensidade e constância dos ventos locais, é uma alternativa promissora em
+            regiões mais elevadas ou com correntes de ar estáveis. No meio rural, pode ser usada em conjunto com
+            outras fontes renováveis para abastecer sistemas híbridos.</p>
+
+        <p><strong>Biomassa:</strong> É a energia gerada a partir de materiais orgânicos, como restos de colheitas,
+            madeira, bagaço de cana, esterco e outros resíduos agroindustriais. Além de reduzir o desperdício, a
+            biomassa oferece uma solução local e renovável, especialmente eficiente em pequenas propriedades que
+            produzem seus próprios resíduos. Pode ser convertida em calor, eletricidade ou biocombustíveis.</p>
+
+        <p><strong>Energia Hidrelétrica:</strong> Produzida a partir do aproveitamento da força da água em movimento,
+            geralmente em rios ou reservatórios. Embora as grandes usinas hidrelétricas sejam comuns no Brasil, também
+            existem versões de pequeno porte — as chamadas PCHs (Pequenas Centrais Hidrelétricas) e micro-hidrelétricas
+            — ideais para comunidades rurais isoladas. Elas oferecem energia constante, desde que o fluxo de água seja
+            estável.</p>
+
+        <p>Cada uma dessas fontes possui características específicas que devem ser avaliadas de acordo com as condições
+            locais, disponibilidade de recursos naturais e necessidades energéticas da região. Investir em fontes
+            renováveis no campo é um passo estratégico rumo a uma produção mais eficiente, limpa e independente.</p>
+
+        <div>align-items</div>
+        <div id="graficoConexao" class="mt-5">
+
+            <h4>Gráfico de Conexão Campo e Cidade</h4>
+            <div style="width: 100%; height: 400px;">
+                <canvas id="graficoLinhas"></canvas>
+            </div>
+        </div>
+    </main>
+
+    <style>
+        .conexao-container {
+            display: flex;
+            gap: 20px;
+            align-items: flex-start;
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .conexao-container img {
+            width: 300px;
+            height: auto;
+            border-radius: 12px;
+            object-fit: cover;
+            flex-shrink: 0;
+        }
+
+        .conexao-text {
+            flex: 1;
+            font-family: Arial, sans-serif;
+            color: #333;
+        }
+
+        .conexao-text h1 {
+            color: #001f3f;
+            margin-bottom: 16px;
+        }
+
+        .conexao-text p {
+            margin-bottom: 16px;
+            line-height: 1.6;
+        }
+
+        @media (max-width: 768px) {
+            .conexao-container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .conexao-container img {
+                width: 100%;
+                max-width: 400px;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+
+    <div class="container">
+  <div class="row mb-4">
+    <div class="col-md-4">
+      <img src="./assets/image/zona.rural2.png.jpeg" class="img-fluid rounded" alt="Produção Rural" />
+    </div>
+    <div class="col-md-8">
+      <h2>Conexão Campo e Cidade</h2>
+            <p>A interdependência entre o campo e a cidade é um fator essencial para o desenvolvimento sustentável e
+                equilibrado de uma nação. Essas duas realidades, embora distintas, estão profundamente conectadas por
+                uma série de fluxos econômicos, sociais e ambientais que garantem o funcionamento harmônico do sistema
+                como um todo.</p>
+
+            <p>No centro dessa relação está a energia rural, que funciona como um elo vital entre o campo e a cidade. A
+                energia possibilita a produção agrícola, o processamento de alimentos, a conservação de produtos e o
+                funcionamento de tecnologias que aumentam a produtividade no meio rural. Tudo isso impacta diretamente o
+                abastecimento das áreas urbanas, que dependem dos recursos naturais e produtos do campo para suprir suas
+                necessidades alimentares e industriais.</p>
+
+            <p>Além disso, a energia contribui para a melhoria da infraestrutura rural, promovendo a inclusão digital, o
+                acesso à educação e à saúde, o que fortalece as comunidades do campo e reduz o êxodo rural. Quando o
+                campo está bem conectado e energizado, há um ciclo virtuoso de desenvolvimento que beneficia também as
+                cidades, por meio da geração de empregos, fortalecimento das cadeias produtivas e dinamização do
+                comércio.</p>
+
+            <p>A conexão entre campo e cidade, por meio da energia, também é importante para a sustentabilidade ambiental,
+                pois incentiva práticas agrícolas mais responsáveis, o uso de fontes renováveis e a redução dos impactos
+                ambientais. Assim, garantir o acesso a uma energia de qualidade no meio rural é fundamental para construir
+                uma economia integrada, resiliente e capaz de enfrentar os desafios sociais e ambientais do século XXI.</p>
+    </div>
+  </div>
+</div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        const ctx = document.getElementById('graficoLinhas').getContext('2d');
+        const graficoLinhas = new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: ['2019', '2020', '2021', '2022', '2023', '2024', '2025'],
+                datasets: [{
+                    label: 'Acesso à Energia (%)',
+                    data: [40, 42, 45, 48, 50, 52, 55], // Dados ajustados com crescimento gradual
+                    borderColor: 'rgba(75, 192, 192, 1)',
+                    backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                    borderWidth: 1,
+                    fill: true
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        title: {
+                            display: true,
+                            text: 'Porcentagem de Acesso à Energia'
+                        }
+                    },
+                    x: {
+                        title: {
+                            display: true,
+                            text: 'Ano'
+                        }
+                    }
+                }
+            }
+        });
+    </script>
+
+    <div style="text-align:center; font-family:Arial, sans-serif; color:black; padding:10px;">
+  Fonte: Ministério de Minas e Energia (MME) — 
+  <a href="https://www.gov.br/mme/pt-br/assuntos/energia" target="_blank" style="color:purple; text-decoration:none;">https://www.gov.br/mme/pt-br/assuntos/energia</a>
+</div>
+
+    <footer class="text-white mt-5">
+        <div class="container text-center py-3">
+            <small>&copy; 2025 Agrinho | Site desenvolvido por estudante do Ensino Fundamental com orgulho rural 🌱</small>
+        </div>
+    </footer>
+</body>
+
+</html>

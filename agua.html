@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Zona Rural - Página Inicial</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous" />
+    <link rel="stylesheet" href="estilos.css" />
+    <style>
+        /* Navbar e footer */
+        .navbar, footer {
+            background-color: #001f3f; /* Azul Marinho */
+        }
+        .navbar-brand {
+            margin-left: auto;
+            font-size: 1.5rem;
+        }
+        .cabecalho {
+            background-color: #333333; /* Cinza Escuro */
+        }
+        .cabecalho h1 {
+            color: white; /* Cor do texto do cabeçalho */
+        }
+        .cabecalho h3 {
+            color: yellow; /* Cor Amarela para o subtítulo */
+        }
+
+        /* Conteúdo principal */
+        main.container {
+            max-width: 1140px; /* Mantém container padrão Bootstrap */
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+
+        /* Ajustes para imagens e textos lado a lado */
+        .content-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            align-items: flex-start;
+            margin-bottom: 40px;
+        }
+        .content-row .image-col {
+            flex: 1 1 40%;
+            max-width: 40%;
+        }
+        .content-row .text-col {
+            flex: 1 1 55%;
+            max-width: 55%;
+            text-align: justify;
+        }
+        .content-row img {
+            width: 100%;
+            height: auto;
+            border-radius: 0.5rem;
+            display: block;
+        }
+
+        /* Cards padronizados */
+        .card {
+            cursor: pointer;
+            transition: transform 0.3s ease;
+            height: 100%;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        .card-body h5 {
+            color: #001f3f;
+            font-weight: 600;
+        }
+        .card-text {
+            color: #333;
+        }
+
+        /* Blocos de citações */
+        .blockquote {
+            background-color: #f8f9fa;
+            border-left: 4px solid #001f3f;
+        }
+        .blockquote p {
+            margin-bottom: 0.3rem;
+        }
+        .blockquote p:first-child {
+            font-style: italic;
+        }
+        .blockquote p:last-child {
+            font-weight: bold;
+        }
+
+        /* Sessão de curiosidades */
+        .curiosidades {
+            max-width: 1140px;
+            margin: 40px auto;
+            padding: 0 15px;
+            font-family: Arial, sans-serif;
+            color: #333;
+            text-align: justify;
+        }
+        .curiosidades h1 {
+            color: #001f3f;
+            margin-bottom: 20px;
+            text-align: left;
+        }
+        .curiosidades p {
+            margin-bottom: 15px;
+        }
+
+        /* Accordion */
+        .accordion-button {
+            font-weight: 600;
+            color: #001f3f;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="cabecalho text-center py-4">
+        <h1>AGRINHO 2025</h1>
+        <h3>Festejando Conexão Campo Cidade</h3>
+    </section>
+
+    <nav class="navbar navbar-expand-lg navbar-dark shadow">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav me-auto">
+                    <a class="nav-link" href="index.html">Página Inicial</a>
+                    <a class="nav-link" href="energia.html">Energia Rural</a>
+                    <a class="nav-link" href="agua.html">Água</a>
+                    <a class="nav-link" href="producao.html">Produção</a>
+                </div>
+                <a class="navbar-brand" href="#" title="Símbolo do Site">🌽</a>
+            </div>
+        </div>
+    </nav>
+
+    <audio id="somClick" src="jao (online-audio-converter.com).mp3" preload="auto"></audio>
+
+  <script>
+    const som = document.getElementById("somClick");
+
+    document.addEventListener("click", () => {
+      som.pause();
+      som.currentTime = 0;
+      som.playbackRate = 2; // <-- aqui aumenta a velocidade
+      som.play().catch((e) => {
+        console.log("Erro ao tocar o som:", e);
+      });
+    });
+  </script>
+
+    <main class="container mt-5">
+
+        <h1>Importância da Água na Agricultura</h1>
+
+        <div class="content-row">
+            <div class="image-col">
+                <img src="./assets/image/agua_agricultura.jpg" alt="Água na Agricultura" />
+            </div>
+            <div class="text-col">
+                <p>
+                    A água é um recurso essencial para a agricultura e a vida rural. Ela é fundamental para a irrigação das plantações,
+                    garantindo que as culturas tenham a umidade necessária para crescer e se desenvolver. Além disso, a água é utilizada em diversas
+                    atividades, como a criação de animais e o abastecimento de comunidades.
+                </p>
+                <p>
+                    A gestão adequada dos recursos hídricos é crucial para enfrentar os desafios da escassez de água e garantir a sustentabilidade
+                    das práticas agrícolas. Com o aumento da demanda por alimentos e as mudanças climáticas, é vital implementar tecnologias que
+                    promovam a conservação da água e o uso eficiente desse recurso.
+                </p>
+                <p>
+                    Além da irrigação, a água desempenha um papel fundamental na manutenção da saúde do solo, contribuindo para a fertilidade e a qualidade
+                    das terras agrícolas. Práticas como a irrigação controlada ajudam a evitar o desperdício e a erosão, preservando o ecossistema local
+                    e garantindo a longevidade das propriedades rurais. O uso consciente da água também minimiza os impactos ambientais, como a contaminação
+                    de rios e aquíferos, assegurando que as futuras gerações possam continuar usufruindo desse recurso vital.
+                </p>
+                <p>
+                    Outro aspecto importante é o desenvolvimento de sistemas de captação e armazenamento de água, como cisternas e reservatórios,
+                    que possibilitam o abastecimento constante mesmo em períodos de estiagem. Essas tecnologias, combinadas com a educação e a capacitação
+                    dos agricultores para práticas mais sustentáveis, fortalecem a resiliência das comunidades rurais diante das mudanças climáticas e das variações
+                    sazonais, promovendo uma agricultura mais eficiente e adaptada às condições locais.
+                </p>
+            </div>
+        </div>
+
+        <h3>Cards Informativos</h3>
+        <div class="row mt-3 g-4">
+            <div class="col-md-4">
+                <div class="card" data-bs-toggle="modal" data-bs-target="#modalFonteAgua">
+                    <img src="./assets/image/fonte_agua.jpg" class="card-img-top" alt="Fontes de Água" />
+                    <div class="card-body">
+                        <h5 class="card-title">Fontes de Água</h5>
+                        <p class="card-text">As fontes de água incluem rios, lagos, aquíferos e a captação de água da chuva, essenciais para a irrigação e consumo.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card" data-bs-toggle="modal" data-bs-target="#modalDesafiosAgua">
+                    <img src="./assets/image/desafios_agua.jpg" class="card-img-top" alt="Desafios da Água" />
+                    <div class="card-body">
+                        <h5 class="card-title">Desafios da Água</h5>
+                        <p class="card-text">A escassez de água e a poluição das fontes hídricas são desafios que afetam a agricultura e a saúde das comunidades rurais.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card" data-bs-toggle="modal" data-bs-target="#modalTecnologiasConservacao">
+                    <img src="./assets/image/tecnologias_conservacao.jpg" class="card-img-top" alt="Tecnologias de Conservação" />
+                    <div class="card-body">
+                        <h5 class="card-title">Tecnologias de Conservação</h5>
+                        <p class="card-text">Métodos de irrigação eficiente e tecnologias de captação de água da chuva ajudam a conservar esse recurso vital.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modais -->
+        <div class="modal fade" id="modalFonteAgua" tabindex="-1" aria-labelledby="modalFonteAguaLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalFonteAguaLabel">Fontes de Água</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>As principais fontes de água na zona rural incluem rios, lagos, poços artesianos e a captação direta da água da chuva, todas essenciais para a agricultura e o consumo das comunidades locais.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="modalDesafiosAgua" tabindex="-1" aria-labelledby="modalDesafiosAguaLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalDesafiosAguaLabel">Desafios da Água</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>A escassez de água e a contaminação por poluentes representam grandes desafios para o abastecimento das áreas rurais, impactando a produtividade agrícola e a saúde das populações.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="modalTecnologiasConservacao" tabindex="-1" aria-labelledby="modalTecnologiasConservacaoLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalTecnologiasConservacaoLabel">Tecnologias de Conservação</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Técnicas modernas como a irrigação por gotejamento, a instalação de cisternas e sistemas de captação de água da chuva auxiliam na conservação e uso racional da água no campo.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h3 class="mt-5">Curiosidades sobre a Água na Agricultura</h3>
+        <div class="curiosidades">
+           <p>Sabia que a irrigação eficiente pode reduzir o consumo de água na agricultura em até 50%? Isso significa economia para o produtor, menos desperdício e um menor impacto ambiental. Sistemas modernos como o gotejamento e a microaspersão entregam a quantidade certa de água diretamente nas raízes das plantas, evitando perdas por evaporação e aumentando a produtividade das lavouras.</p>
+
+<p>O uso de tecnologias para captação da água da chuva é uma prática tradicional que vem ganhando cada vez mais espaço nas propriedades rurais modernas. Cisternas, reservatórios e sistemas de filtragem permitem o armazenamento e reaproveitamento da água pluvial, reduzindo a dependência de fontes externas e garantindo o abastecimento em épocas de estiagem.</p>
+
+<p>A água não serve só para irrigar: ela também é fundamental para o manejo do solo, a criação de animais e a manutenção dos ecossistemas locais. Sem água de qualidade, o solo perde fertilidade, os rebanhos sofrem com doenças e a biodiversidade da região entra em risco. Por isso, preservar nascentes e evitar a contaminação de rios é uma responsabilidade de todos.</p>
+
+<p>Em muitas regiões, sistemas comunitários de gestão da água ajudam a distribuir esse recurso de forma justa e sustentável entre agricultores. Esses sistemas envolvem a participação ativa da comunidade na tomada de decisões sobre o uso, monitoramento e manutenção das fontes hídricas, promovendo a solidariedade e o desenvolvimento sustentável no meio rural.</p>
+
+        </div>
+
+ 
+
+  <h2>Perguntas Frequentes</h2>
+  <div class="accordion" id="faqAccordion">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingOne">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+        Qual é a importância da água na agricultura?
+      </button>
+    </h2>
+    <div id="collapseOne" class="accordion-collapse collapse show"
+         aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+      <div class="accordion-body">
+        A água é essencial para irrigar, manter os ecossistemas, nutrir o solo e garantir a produção de alimentos.
+      </div>
+    </div>
+  </div>
+
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingTwo">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+        Como posso conservar água na minha propriedade rural?
+      </button>
+    </h2>
+    <div id="collapseTwo" class="accordion-collapse collapse"
+         aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+      <div class="accordion-body">
+        Utilizando irrigação por gotejamento, captação de água da chuva, cobertura do solo com palhada e evitando desperdícios.
+      </div>
+    </div>
+  </div>
+
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingThree">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+        O que é irrigação eficiente?
+      </button>
+    </h2>
+    <div id="collapseThree" class="accordion-collapse collapse"
+         aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+      <div class="accordion-body">
+        É o uso controlado da água de forma que atenda à necessidade das plantas, com o mínimo desperdício. Exemplos incluem irrigação por gotejamento e microaspersão.
+      </div>
+    </div>
+  </div>
+
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingFour">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+        Vale a pena investir em sistemas de captação de água da chuva?
+      </button>
+    </h2>
+    <div id="collapseFour" class="accordion-collapse collapse"
+         aria-labelledby="headingFour" data-bs-parent="#faqAccordion">
+      <div class="accordion-body">
+        Sim! Além de reduzir o uso de água de fontes externas, esses sistemas ajudam a garantir abastecimento mesmo em períodos de seca.
+      </div>
+    </div>
+  </div>
+
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingFive">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+        Quais tecnologias posso usar para melhorar o uso da água?
+      </button>
+    </h2>
+    <div id="collapseFive" class="accordion-collapse collapse"
+         aria-labelledby="headingFive" data-bs-parent="#faqAccordion">
+      <div class="accordion-body">
+        Sensores de umidade, sistemas automatizados de irrigação, estações meteorológicas e aplicativos de monitoramento são ótimas opções.
+      </div>
+    </div>
+  </div>
+
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingSix">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+        A gestão da água pode ser feita em grupo?
+      </button>
+    </h2>
+    <div id="collapseSix" class="accordion-collapse collapse"
+         aria-labelledby="headingSix" data-bs-parent="#faqAccordion">
+      <div class="accordion-body">
+        Sim! Muitos produtores formam associações ou participam de projetos comunitários para compartilhar recursos e garantir acesso igualitário à água.
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <!-- Bootstrap JS Bundle (com Popper incluído) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+
+    </main>
+
+    <div style="text-align:center; font-family:Arial, sans-serif; color:black; padding:10px;">
+  Fonte: Agência Nacional de Águas (ANA) — 
+  <a href="https://www.gov.br/ana/pt-br" target="_blank" style="color:purple; text-decoration:none;">https://www.gov.br/ana/pt-br</a>
+</div>
+
+    <footer class="text-center text-white py-3 mt-5">
+        © 2025 Todos os direitos reservados.
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-NQL8BvhDxi1HKV/RVu3B5TPR+ZldVZ1Nk7rv09eAcM9tz+wb6yzJLVXG3ewULjgf"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zona Rural - Página Inicial</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link rel="stylesheet" href="estilos.css">
+    <style>
+        .navbar, footer {
+            background-color: #001f3f; /* Azul Marinho */
+        }
+        .navbar-brand {
+            margin-left: auto;
+            font-size: 1.5rem; /* Tamanho do texto do símbolo */
+        }
+        .cabecalho {
+            background-color: #333333; /* Cinza Escuro */
+        }
+        .cabecalho h1 {
+            color: white; /* Cor do texto do cabeçalho */
+        }
+        .cabecalho h3 {
+            color: yellow; /* Cor Amarela para o subtítulo */
+        }
+    </style>
+</head>
+
+<body>
+    <section class="cabecalho text-center" style="padding: 20px 0;">
+        <h1>AGRINHO 2025</h1>
+        <h3>Festejando Conexão Campo Cidade</h3>
+    </section>
+
+    <nav class="navbar navbar-expand-lg navbar-dark shadow">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav me-auto">
+                    <a class="nav-link" href="index.html">Página Inicial</a>
+                    <a class="nav-link" href="energia.html">Energia Rural</a>
+                    <a class="nav-link" href="agua.html">Água</a>
+                    <a class="nav-link" href="producao.html">Produção</a>
+                </div>
+                <a class="navbar-brand" href="#" title="Símbolo do Site">🌽</a>
+            </div>
+        </div>
+    </nav>
+
+    <audio id="somClick" src="jao (online-audio-converter.com).mp3" preload="auto"></audio>
+
+  <script>
+    const som = document.getElementById("somClick");
+
+    document.addEventListener("click", () => {
+      som.pause();
+      som.currentTime = 0;
+      som.playbackRate = 2; // <-- aqui aumenta a velocidade
+      som.play().catch((e) => {
+        console.log("Erro ao tocar o som:", e);
+      });
+    });
+  </script>
+
+    <main class="container mt-5">
+        <h2>Produção Rural</h2>
+        <div class="row mb-4">
+            <div class="col-md-8">
+               <p><strong>A produção rural é um pilar fundamental da economia, desempenhando um papel crucial na segurança alimentar, na geração de empregos e no desenvolvimento sustentável.</strong> Ela envolve uma ampla gama de atividades, que vão desde o cultivo de grãos, frutas e hortaliças até a criação de animais para a produção de carne, leite, ovos e outros produtos de origem animal.</p>
+
+<p>Mais do que abastecer as cidades com alimentos, fibras e matérias-primas, a produção rural sustenta milhões de famílias no campo e movimenta cadeias produtivas inteiras, como as indústrias de alimentos, transportes e comércio.</p>
+
+<p>Além disso, práticas agrícolas bem planejadas contribuem para a preservação dos recursos naturais, o equilíbrio dos ecossistemas e a valorização das comunidades locais. Investir em inovação, educação e sustentabilidade no campo é essencial para garantir um futuro mais equilibrado e resiliente para todos.</p>
+
+            </div>
+            <div class="col-md-4">
+                <img src="./assets/image/producao_rural.jpg" class="img-fluid rounded" alt="Produção Rural">
+            </div>
+        </div>
+
+        <div class="row mb-4">
+            <div class="col-md-4">
+                <img src="./assets/image/tecnicas_producao.jpg" class="img-fluid rounded" alt="Técnicas de Produção">
+            </div>
+            <div class="col-md-8">
+               <p><strong>As técnicas de produção rural têm evoluído significativamente ao longo dos anos</strong>, acompanhando os avanços tecnológicos e as crescentes demandas por sustentabilidade e eficiência no campo. Hoje, os produtores contam com uma variedade de métodos modernos que otimizam o uso dos recursos naturais e aumentam a produtividade sem comprometer o meio ambiente.</p>
+
+<p>Um exemplo disso é a <strong>agricultura de precisão</strong>, que utiliza sensores, drones, GPS e softwares especializados para coletar dados em tempo real sobre o solo, o clima e as plantas. Com essas informações, é possível aplicar insumos agrícolas – como água, fertilizantes e defensivos – de forma localizada e eficiente, reduzindo desperdícios e aumentando os resultados.</p>
+
+<p>Outro destaque é a <strong>agroecologia</strong>, uma abordagem que alia o conhecimento científico à sabedoria tradicional para promover sistemas agrícolas mais equilibrados, resilientes e integrados à natureza. Essa prática valoriza a diversidade, o uso responsável dos recursos e o fortalecimento das comunidades rurais, promovendo um modelo de produção mais justo e duradouro.</p>
+
+            </div>
+        </div>
+
+        <h3 class="mt-5">Informações Adicionais</h3>
+<p><strong>A produção rural não se limita apenas à agricultura</strong>, mas também engloba outros setores fundamentais como a pecuária, a aquicultura e a agroindústria. Juntos, esses segmentos formam uma cadeia produtiva complexa e interdependente, responsável por abastecer a população com alimentos, matérias-primas e produtos industrializados.</p>
+
+<p>A <strong>pecuária</strong>, por exemplo, inclui a criação de bovinos, suínos, aves, ovinos e outros animais, sendo essencial para a produção de carne, leite, ovos, couro e outros derivados. Já a <strong>aquicultura</strong> se refere ao cultivo de organismos aquáticos, como peixes, camarões e moluscos, sendo uma alternativa sustentável para atender à crescente demanda por proteína animal.</p>
+
+<p>Por sua vez, a <strong>agroindústria</strong> é responsável por transformar os produtos primários do campo em itens processados, como queijos, conservas, óleos, farinhas e bebidas. Esse setor agrega valor à produção rural, gera empregos e impulsiona o desenvolvimento econômico de regiões inteiras.</p>
+
+<p>Cada um desses setores enfrenta <strong>desafios específicos</strong>, como a necessidade de manejo adequado dos recursos naturais, controle sanitário, acesso a tecnologias e mercados, além de políticas públicas que favoreçam sua sustentabilidade. No entanto, todos são <strong>essenciais para o funcionamento do sistema alimentar</strong> e o fortalecimento da segurança alimentar no país.</p>
+        
+        <h3 class="mt-4">Exemplos de Produção Rural</h3>
+        <ul>
+  <li>
+    <strong>Produção de Grãos:</strong> O cultivo de grãos como milho, soja e trigo é uma das principais bases da agricultura brasileira. Esses grãos são fundamentais não apenas para a alimentação humana, mas também para a produção de ração animal, biocombustíveis e diversos produtos industrializados. O Brasil está entre os maiores exportadores mundiais desses alimentos, contribuindo significativamente para a balança comercial do país. Além disso, avanços em tecnologia agrícola, como o uso de sementes geneticamente modificadas e sistemas de plantio direto, têm aumentado a produtividade e a sustentabilidade do setor.
+  </li>
+  <li>
+    <strong>Pecuária:</strong> A criação de gado, tanto para produção de leite quanto de carne, é uma atividade essencial em muitas regiões do Brasil. O país é um dos maiores produtores e exportadores de carne bovina do mundo. A pecuária também movimenta uma ampla cadeia produtiva, incluindo a indústria de laticínios, couro e subprodutos animais. Atualmente, tem crescido o interesse por práticas mais sustentáveis, como o manejo rotacionado de pastagens, o bem-estar animal e a integração lavoura-pecuária-floresta (ILPF), que permitem maior equilíbrio entre produtividade e preservação ambiental.
+  </li>
+  <li>
+    <strong>Aquicultura:</strong> A criação controlada de organismos aquáticos, como peixes, camarões e moluscos, tem se desenvolvido rapidamente no Brasil. Essa atividade surge como uma resposta à sobrepesca e à necessidade de diversificar a produção de proteínas animais. Regiões com disponibilidade de água doce, como o Norte e o Centro-Oeste, têm se destacado nesse setor. A aquicultura contribui para a geração de renda, empregos e segurança alimentar, e vem sendo incentivada por políticas públicas que buscam promover sua expansão de forma ambientalmente responsável.
+  </li>
+</ul>
+
+
+        <h3 class="mt-4">Tabela de Produção Rural</h3>
+        <table class="table table-bordered mt-3">
+            <thead>
+                <tr>
+                    <th scope="col">Produto</th>
+                    <th scope="col">Área Plantada (ha)</th>
+                    <th scope="col">Produção (toneladas)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Milho</td>
+                    <td>5.000.000</td>
+                    <td>30.000.000</td>
+                </tr>
+                <tr>
+                    <td>Soja</td>
+                    <td>4.500.000</td>
+                    <td>25.000.000</td>
+                </tr>
+                <tr>
+                    <td>Trigo</td>
+                    <td>1.200.000</td>
+                    <td>6.000.000</td>
+                </tr>
+                <tr>
+                    <td>Arroz</td>
+                    <td>1.000.000</td>
+                    <td>5.500.000</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+
+    <div style="text-align:center; font-family:Arial, sans-serif; color:black; padding:10px;">
+  Fonte: Empresa Brasileira de Pesquisa Agropecuária (EMBRAPA) — 
+  <a href="https://www.embrapa.br" target="_blank" style="color:purple; text-decoration:none;">https://www.embrapa.br</a>
+</div>
+
+    <footer class="text-light text-center py-3 mt-5">
+        <small>&copy; 2025 Agrinho | Site desenvolvido por estudante do Ensino Fundamental com orgulho rural 🌱</small>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

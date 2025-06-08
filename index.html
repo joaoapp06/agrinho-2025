@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zona Rural - Página Inicial</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link rel="stylesheet" href="estilos.css">
+    <style>
+        .navbar, footer {
+            background-color: #001f3f; /* Azul Marinho */
+        }
+        .navbar-brand {
+            margin-left: auto;
+            font-size: 1.5rem; /* Tamanho do texto do símbolo */
+        }
+        .cabecalho {
+            background-color: #333333; /* Cinza Escuro */
+        }
+        .cabecalho h1 {
+            color: white; /* Cor do texto do cabeçalho */
+        }
+        .cabecalho h3 {
+            color: yellow; /* Cor Amarela para o subtítulo */
+        }
+    </style>
+</head>
+
+<body>
+    <section class="cabecalho text-center" style="padding: 20px 0;">
+        <h1>AGRINHO 2025</h1>
+        <h3>Festejando Conexão Campo Cidade</h3>
+    </section>
+
+    <nav class="navbar navbar-expand-lg navbar-dark shadow">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav me-auto">
+                    <a class="nav-link" href="index.html">Página Inicial</a>
+                    <a class="nav-link" href="energia.html">Energia Rural</a>
+                    <a class="nav-link" href="agua.html">Água</a>
+                    <a class="nav-link" href="producao.html">Produção</a>
+                </div>
+                <a class="navbar-brand" href="#" title="Símbolo do Site">🌽</a>
+            </div>
+        </div>
+    </nav>
+
+    <audio id="somClick" src="jao (online-audio-converter.com).mp3" preload="auto"></audio>
+
+  <script>
+    const som = document.getElementById("somClick");
+
+    document.addEventListener("click", () => {
+      som.pause();
+      som.currentTime = 0;
+      som.playbackRate = 2; // <-- aqui aumenta a velocidade
+      som.play().catch((e) => {
+        console.log("Erro ao tocar o som:", e);
+      });
+    });
+  </script>
+
+    <main class="container mt-5">
+        <h1>Bem-vindo à Zona Rural</h1>
+
+<p>A zona rural é um território repleto de cultura, tradição e um vasto potencial de recursos naturais. Esse espaço, muitas vezes associado ao campo, desempenha um papel crucial no sustento das comunidades, além de ser um berço de práticas ancestrais que continuam a influenciar as gerações atuais.</p>
+
+<p>A energia, a água e a produção agrícola são pilares fundamentais para o desenvolvimento sustentável das áreas rurais. A gestão adequada desses recursos é essencial para garantir o bem-estar das comunidades e a preservação do meio ambiente, equilibrando as necessidades de crescimento com a conservação dos ecossistemas locais.</p>
+
+<p>Este site visa destacar as iniciativas que promovem a inovação no campo, mostrando como a tecnologia e as boas práticas podem transformar a vida rural. Ao mesmo tempo, buscamos reforçar a importância da integração entre o meio rural e urbano, promovendo um entendimento mútuo e a troca de conhecimentos.</p>
+
+<p>Celebramos, assim, as soluções que fortalecem a vida no campo e as maneiras pelas quais as comunidades rurais contribuem para o desenvolvimento das cidades. O futuro do campo e da cidade está em harmonia, e é com esse espírito que apresentamos as práticas e inovações que moldam esse universo.</p>
+
+
+        <div class="row mt-4">
+            <div class="col-md-4">
+                <img src="./assets/image/zona_rural1.jpg" class="img-fluid rounded" alt="Imagem da Zona Rural 1">
+            </div>
+            <div class="col-md-4">
+                <img src="./assets/image/zona_rural2.jpg" class="img-fluid rounded" alt="Imagem da Zona Rural 2">
+            </div>
+            <div class="col-md-4">
+                <img src="./assets/image/zona_rural3.jpg" class="img-fluid rounded" alt="Imagem da Zona Rural 3">
+            </div>
+        </div>
+
+        <div class="row mt-4">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Cultura Local</h5>
+                        <p class="card-text">A cultura rural é rica em tradições e festividades que refletem a vida no
+                            campo. Celebrações como festas juninas e colheitas são momentos de união e
+                            confraternização.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Sustentabilidade</h5>
+                        <p class="card-text">Práticas agrícolas sustentáveis são essenciais para preservar o meio
+                            ambiente e garantir a produção de alimentos de qualidade para as futuras gerações.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Inovação</h5>
+                        <p class="card-text">A tecnologia tem transformado a agricultura, com inovações que aumentam a
+                            eficiência e reduzem o impacto ambiental. Sistemas de irrigação e cultivo de precisão são
+                            exemplos disso.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h1>A Importância da Sustentabilidade no Campo</h1>
+
+<p>No coração das áreas rurais, a sustentabilidade desempenha um papel vital para o futuro das comunidades e do meio ambiente. Ao adotar práticas sustentáveis, as comunidades rurais não só preservam seus recursos naturais, como também garantem um ciclo de vida mais equilibrado e saudável para as futuras gerações.</p>
+
+<p>A agricultura sustentável, o manejo responsável da água e a conservação do solo são exemplos de ações que, quando aplicadas, promovem o uso consciente dos recursos. Essas práticas não apenas asseguram a produtividade agrícola, mas também ajudam a mitigar os impactos das mudanças climáticas e a preservar a biodiversidade local.</p>
+
+<p>Além disso, as tecnologias verdes estão cada vez mais presentes no cotidiano rural. Inovações como sistemas de energia solar, irrigação inteligente e cultivo agroecológico mostram como é possível unir desenvolvimento e preservação ambiental, garantindo que o campo se fortaleça sem comprometer o meio ambiente.</p>
+
+<p>Ao integrar a sustentabilidade em suas rotinas, as comunidades rurais se tornam modelos para outros setores, demonstrando que o progresso e a preservação podem caminhar juntos. Assim, o campo se posiciona como um exemplo de como o equilíbrio entre natureza e desenvolvimento pode ser alcançado, beneficiando todos ao redor.</p>
+
+
+
+        <div id="carouselExample" class="carousel slide mt-5" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./assets/image/carousel1.jpg" class="d-block w-100" alt="Carrossel 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/image/carousel2.jpg" class="d-block w-100" alt="Carrossel 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/image/carousel3.jpg" class="d-block w-100" alt="Carrossel 3">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Próximo</span>
+            </button>
+        </div>
+    </main>
+
+    <div style="text-align:center; font-family:Arial, sans-serif; color:black; padding:10px;">
+  Fonte: Instituto Brasileiro de Geografia e Estatística (IBGE) — 
+  <a href="https://www.ibge.gov.br" target="_blank" style="color:purple; text-decoration:none;">https://www.ibge.gov.br</a>
+</div>
+
+    <footer class="text-light text-center py-3 mt-5">
+        <small>&copy; 2025 Agrinho | Site desenvolvido por estudante do Ensino Fundamental com orgulho rural 🌱</small>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

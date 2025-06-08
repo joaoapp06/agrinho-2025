@@ -1,0 +1,87 @@
+/* estilos.css */
+.cabecalho {
+    color: white;
+    background-color: rgb(0, 38, 255);
+    text-align: center;
+    padding: 30px;
+}
+/* Reseta margens e preenchimentos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fonte padrão */
+body {
+    font-family: 'Arial', sans-serif; /* Fonte padrão */
+    line-height: 1.6;
+    background-color: #f4f4f4; /* Fundo claro */
+    color: #333; /* Texto escuro */
+}
+
+/* Estilo dos cabeçalhos */
+h1, h2, h3 {
+    color: #001f3f; /* Azul Marinho para cabeçalhos */
+}
+
+/* Estilo do cabeçalho */
+.cabecalho {
+    background-color: #007bff; /* Azul para o cabeçalho */
+    color: white; /* Texto branco no cabeçalho */
+    padding: 1rem; /* Espaçamento interno */
+    text-align: center; /* Centraliza o texto */
+}
+
+/* Estilo dos parágrafos */
+p {
+    margin-bottom: 1rem; /* Espaçamento entre parágrafos */
+}
+
+/* Estilo das listas */
+ul {
+    list-style-type: disc; /* Marcadores de lista */
+    margin-left: 20px; /* Indentação */
+}
+
+/* Tabelas */
+table {
+    width: 100%; /* Tabela ocupa toda a largura */
+    border-collapse: collapse; /* Remove espaçamento entre células */
+    margin-top: 1rem; /* Espaçamento acima da tabela */
+}
+
+th, td {
+    border: 1px solid #ddd; /* Borda leve */
+    padding: 8px; /* Espaçamento interno */
+    text-align: left; /* Alinhamento à esquerda */
+}
+
+th {
+    background-color: #007bff; /* Azul para cabeçalhos de tabela */
+    color: white; /* Texto branco nos cabeçalhos */
+}
+
+/* Estilo dos botões */
+.btn {
+    background-color: #007bff; /* Azul */
+    color: white; /* Texto branco */
+}
+
+.btn:hover {
+    background-color: #0056b3; /* Azul escuro ao passar o mouse */
+}
+
+/* Rodapé */
+footer {
+    background-color: #007bff; /* Azul para o rodapé */
+    color: white; /* Texto branco no rodapé */
+    padding: 1rem 0; /* Espaçamento interno */
+    text-align: center; /* Centraliza o texto do rodapé */
+}
+
+/* Imagens */
+.img-fluid {
+    max-width: 100%; /* Imagens responsivas */
+    height: auto; /* Altura automática */
+}
